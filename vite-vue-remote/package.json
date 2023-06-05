@@ -4,11 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "dev": "vite --port 5000 --strictPort",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview --port 5000 --strictPort"
   },
   "dependencies": {
+    "@originjs/vite-plugin-federation": "^1.2.3",
     "vue": "^3.2.47"
   },
   "devDependencies": {
