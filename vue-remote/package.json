@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --port=5001",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "start": "serve -d dist -p 5001"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -24,6 +25,8 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
     "prettier": "^2.4.1",
-    "typescript": "~4.5.5"
+    "serve": "^14.2.0",
+    "typescript": "~4.5.5",
+    "webpack": "^5.85.1"
   }
 }
