@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import VueComponent from './components/RemoteVueComponent'
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       </div>
 
       <div className={styles.center}>
+        <VueComponent />
         <Image
           className={styles.logo}
           src="/next.svg"
